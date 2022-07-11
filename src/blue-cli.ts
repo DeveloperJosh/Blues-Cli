@@ -9,3 +9,8 @@ yargs(hideBin(process.argv))
 .usage('$0 <cmd> [args]')
 .alias({ h: 'help'})
 .argv;
+
+/// send help to user if no command is provided
+if (!process.argv.slice(2).length) {
+    yargs.showHelp();
+}

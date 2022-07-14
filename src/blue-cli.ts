@@ -2,6 +2,7 @@
 
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
+import fs from 'fs';
 
 yargs(hideBin(process.argv))
 .commandDir('commands')
@@ -10,7 +11,7 @@ yargs(hideBin(process.argv))
 .alias({ h: 'help'})
 .argv;
 
-/// send help to user if no command is provided
+//// no command specified send help
 if (!process.argv.slice(2).length) {
     yargs.showHelp();
 }

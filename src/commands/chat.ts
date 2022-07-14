@@ -7,7 +7,6 @@ colors.enable()
 
 type Options = {
   message: string;
-  upper: boolean | undefined;
 };
   
   export const command: string = 'chat <message>';
@@ -20,8 +19,8 @@ type Options = {
     const { message } = argv;
     const chat = new ChatAI();
     chat.getResponse(message).then((response) => {
-        console.log(`AI: ${response}`);
+        console.log(`AI: ${response}`.green);
  }).catch((err) => {
-        console.log(`Error: ${err}`);
+        console.log(`Error: ${err}`.red);
      });
 };

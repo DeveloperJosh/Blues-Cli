@@ -25,7 +25,7 @@
     "@types/yargs": "^17.0.10",
     "nodemon": "^2.0.19",
     "rimraf": "^3.0.2",
-    "ts-node": "^10.8.2"
+    "ts-node": "^10.9.2"
   },
   "dependencies": {
     "axios": "^0.27.2",
@@ -33,7 +33,7 @@
     "clui": "^0.3.6",
     "colors": "^1.4.0",
     "dotenv": "^16.0.1",
-    "express": "^4.18.1",
+    "express": "^4.19.2",
     "fastify": "^4.2.0",
     "figlet": "^1.5.2",
     "request": "^2.88.2",
@@ -41,6 +41,6 @@
     "speaker": "^0.5.4",
     "systeminformation": "^5.22.9",
     "windows-cpu": "^1.1.0",
-    "yargs": "^17.5.1"
+    "yargs": "^17.7.2"
   }
 }
